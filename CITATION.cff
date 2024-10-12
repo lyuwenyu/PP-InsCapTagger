@@ -1,0 +1,24 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Instance Capability Tagger
+message: >-
+  If you use this model, please cite it using the metadata from this file.
+type: software
+authors:
+  - given-names: Wenyu
+    family-names: Lv
+    email: lyuwenyu@foxmail.com
+  - given-names: Kui
+    family-names: Huang
+  - given-names: Yian
+    family-names: Zhao  
+repository-code: 'https://github.com/lyuwenyu/PP-InsCapTagger'
+repository: 'https://github.com/lyuwenyu/PP-InsCapTagger'
+keywords:
+  - mllm
+  - InsCapTagger
+license: Apache-2.0
+version: 1.0
+date-released: 2024-10-10

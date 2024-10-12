@@ -1,5 +1,9 @@
 # PP-InsCapTagger
 
+## 模型
+
+Code and model are available in [this](https://github.com/PaddlePaddle/PaddleMIX/tree/develop/paddlemix/datacopilot/example/pp_inscaptagger).
+
 ## 方案简介
 
 PP-InsCapTagger(Instance Capability Tagger) 是 DataCopilot 基于 PaddleMIX 实现的数据集行为标签模型，用于为多模态数据实例能力打标，通过实例能力分布对数据集进行优化，可以提高模型训练效率，为数据集分析和评价提供了一种高效的方案。
@@ -104,8 +108,32 @@ LLaVA v1.5模型SFT阶段训练时，使用的指令微调数据集为[LLaVA-Ins
 
 | Version              | ScienceQA | TextVQA | VQAv2 | GQA   | mmmu  | mme            |
 |:----------------------:|:-----------:|:---------:|:-------:|:-------:|:-------:|:----------------:|
-| llava-1.5-7b <br> (paper) | 66.8 | 58.2 | 78.5 | 62.0 |  -  |  -  |
+| llava-1.5-7b <br> (origin) | 66.8 | 58.2 | 78.5 | 62.0 |  -  |  -  |
 | llava-1.5-7b <br> (rerun) | 69.01 | 57.6 | 79.0 | 62.95 | 36.89 | 1521 <br> 323 |
-| llava-1.5-7b <br> (tag 50%/our) | 70.24 | 57.12 | 78.32 | 62.14 | 37.11 | 1476 <br> 338 |
+| llava-1.5-7b <br> (random 50%) | 67.31 | 55.6 | 76.89 | 61.01 | 34.67 | 1421 <br> 286 |
+| llava-1.5-7b <br> (our 50%) | 70.24<font color=green>(+2.93)</font> | 57.12<font color=green>(+1.52)</font> | 78.32<font color=green>(+1.43)</font> | 62.14<font color=green>(+1.13)</font> | 37.11<font color=green>(+2.44)</font> | 1476<font color=green>(+55)</font> <br> 338<font color=green>(+52)</font> |
 
-通过PP-InsCapTagger的打标和优化，50%数据集与原始数据集的训练效果基本持平，大大提高了模型训练效率。
+
+**通过PP-InsCapTagger的打标和优化，我们采样出的50%数据集优于随机采样，并且与全量原始数据集的训练效果基本持平，大大提高了模型训练效率。**
+
+
+## Citation
+If you use `PP-InsCapTagger` in your work, please consider citing the following BibTeX entry:
+
+<details open>
+<summary> bibtex </summary>
+
+```bibtex
+@software{Lv_Instance_Capability_Tagger_2024,
+author = {Lv, Wenyu and Huang, Kui and Zhao, Yian},
+license = {Apache-2.0},
+month = oct,
+title = {{Instance Capability Tagger}},
+url = {https://github.com/lyuwenyu/PP-InsCapTagger},
+version = {1.0},
+year = {2024}
+}
+```
+</details>
+
+
