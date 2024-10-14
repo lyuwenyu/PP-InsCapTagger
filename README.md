@@ -1,12 +1,18 @@
 # PP-InsCapTagger
 
-## 模型
+## Updates
+- \[2024.10.10\] Code and model are available at [this](https://github.com/PaddlePaddle/PaddleMIX/tree/develop/paddlemix/datacopilot/example/pp_inscaptagger).
 
-Code and model are available in [this](https://github.com/PaddlePaddle/PaddleMIX/tree/develop/paddlemix/datacopilot/example/pp_inscaptagger).
+
+## TODO
+- [x] Release code and model
+- [ ] English version README
+- [ ] Upload arXiv paper
+
 
 ## 方案简介
 
-PP-InsCapTagger(Instance Capability Tagger) 是 DataCopilot 基于 PaddleMIX 实现的数据集行为标签模型，用于为多模态数据实例能力打标，通过实例能力分布对数据集进行优化，可以提高模型训练效率，为数据集分析和评价提供了一种高效的方案。
+PP-InsCapTagger(Instance Capability Tagger) 是 DataCopilot 基于 PaddleMIX 实现的数据能力标签模型，用于为多模态数据实例能力打标，通过实例能力分布对数据集进行优化，可以提高模型训练效率，为数据集分析和评价提供了一种高效的方案。
 结合模型推理打标结果对LLaVA SFT数据集进行优化，可以**提高LLaVA模型SFT阶段50%的训练效率**。
 
 数据实例能力标签：在多模态任务中，每条数据都可以抽象出一种或多种能力，在训练时，模型会从这些数据中学习并增强自身对应的能力，如下图。为了评价和优化数据集，我们可以通过模型为每条多模态数据在模型训练中贡献的实例能力进行打标，并根据打标结果中数据实例能力分布进行数据集的优化，进而提升模型的训练效率。
@@ -106,7 +112,7 @@ LLaVA v1.5模型SFT阶段训练时，使用的指令微调数据集为[LLaVA-Ins
 
 我们分别使用llava_v1_5_mix665k数据集和筛选后的数据集进行llava-1.5-7b SFT阶段训练，对比结果如下表所示：
 
-| Version              | ScienceQA | TextVQA | VQAv2 | GQA   | mmmu  | mme            |
+| Model              | ScienceQA | TextVQA | VQAv2 | GQA   | mmmu  | mme            |
 |:----------------------:|:-----------:|:---------:|:-------:|:-------:|:-------:|:----------------:|
 | llava-1.5-7b <br> (origin) | 66.8 | 58.2 | 78.5 | 62.0 |  -  |  -  |
 | llava-1.5-7b <br> (rerun) | 69.01 | 57.6 | 79.0 | 62.95 | 36.89 | 1521 <br> 323 |
@@ -128,7 +134,7 @@ If you use `PP-InsCapTagger` in your work, please consider citing the following 
 author = {Lv, Wenyu and Huang, Kui and Zhao, Yian},
 license = {Apache-2.0},
 month = oct,
-title = {{Instance Capability Tagger}},
+title = {{Instance Capability Tagger: Enhancing Multimodal Data Efficiency for Model Training}},
 url = {https://github.com/lyuwenyu/PP-InsCapTagger},
 version = {1.0},
 year = {2024}

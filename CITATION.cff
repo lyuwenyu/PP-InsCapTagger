@@ -2,7 +2,7 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: Instance Capability Tagger
+title: 'Instance Capability Tagger: Enhancing Multimodal Data Efficiency for Model Training'
 message: >-
   If you use this model, please cite it using the metadata from this file.
 type: software
