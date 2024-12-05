@@ -1,6 +1,6 @@
 # PP-InsCapTagger
 
-## Updates
+## Update
 - \[2024.10.10\] Code and model are available at [this](https://github.com/PaddlePaddle/PaddleMIX/tree/develop/paddlemix/datacopilot/example/pp_inscaptagger).
 
 
@@ -9,6 +9,27 @@
 - [ ] English version README
 - [ ] Upload arXiv paper
 
+
+## Citation
+If you use `PP-InsCapTagger` in your work, please consider citing the following BibTeX entry:
+
+<details open>
+<summary> bibtex </summary>
+
+```bibtex
+@software{Lv_Instance_Capability_Tagger_2024,
+author = {Lv, Wenyu and Huang, Kui and Zhao, Yian},
+license = {Apache-2.0},
+month = oct,
+title = {{Instance Capability Tagger: Enhancing Multimodal Data Efficiency for Model Training}},
+url = {https://github.com/lyuwenyu/PP-InsCapTagger},
+version = {1.0},
+year = {2024}
+}
+```
+</details>
+
+---
 
 ## 方案简介
 
@@ -121,25 +142,4 @@ LLaVA v1.5模型SFT阶段训练时，使用的指令微调数据集为[LLaVA-Ins
 
 
 **通过PP-InsCapTagger的打标和优化，我们采样出的50%数据集优于随机采样，并且与全量原始数据集的训练效果基本持平，大大提高了模型训练效率。**
-
-
-## Citation
-If you use `PP-InsCapTagger` in your work, please consider citing the following BibTeX entry:
-
-<details open>
-<summary> bibtex </summary>
-
-```bibtex
-@software{Lv_Instance_Capability_Tagger_2024,
-author = {Lv, Wenyu and Huang, Kui and Zhao, Yian},
-license = {Apache-2.0},
-month = oct,
-title = {{Instance Capability Tagger: Enhancing Multimodal Data Efficiency for Model Training}},
-url = {https://github.com/lyuwenyu/PP-InsCapTagger},
-version = {1.0},
-year = {2024}
-}
-```
-</details>
-
 
