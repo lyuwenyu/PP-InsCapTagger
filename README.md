@@ -17,14 +17,11 @@ If you use `PP-InsCapTagger` in your work, please consider citing the following 
 <summary> bibtex </summary>
 
 ```bibtex
-@software{Lv_Instance_Capability_Tagger_2024,
-author = {Lv, Wenyu and Huang, Kui and Zhao, Yian},
-license = {Apache-2.0},
-month = oct,
-title = {{Instance Capability Tagger: Enhancing Multimodal Data Efficiency for Model Training}},
-url = {https://github.com/lyuwenyu/PP-InsCapTagger},
-version = {1.0},
-year = {2024}
+@misc{ppinscaptagger2024,
+title={Instance Capability Tagger: Enhancing Multimodal Data Efficiency for Model Training.},
+author={Lv Wenyu and Huang Kui and Zhao Yian},
+howpublished = {\url{https://github.com/lyuwenyu/PP-InsCapTagger}},
+year={2024}
 }
 ```
 </details>
